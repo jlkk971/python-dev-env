@@ -100,16 +100,30 @@ And now you think you're there, but you're not. If you go to github.com and logi
 
 1. Install PyCharm (community edition)
   * https://www.jetbrains.com/pycharm/download
-  * 
-3. 
--	Open new project, with existing interpreter (from venv)
--	Git is automatically detected if in project folder, use terminal to check branch
--	Create configuration to run the code
+   
+2. Open project: <project_folder> and check all the settings:
+- Check in the terminal that the venv is still activated
+- Check The interpreter Python3.10(project) <- should be from the venv, edit interpreter shows the packages
+- Check the git branch: dev
+
+3. Set the configuration:
+- [Configurations] > Edit configuration
+- `+ ` to add, choose 'Python'
+  * Name: 'webapp' # or <project_name>
+  * Script path: /workspace/<project_folder>/manage.py
+  * Parameters: runserver # is a flag that can be added in the terminal
+*   ! This is the 'PyCharm'-version of `python manage.py runserver` which is the command with which you can start the webserver in the commandline.
+- Make sure the Python Interpreter is referring to the location of the virtual environment
+- Make sure the Working directory refers for <project_folder>
 -	Run the code
--	Optional: create debug configuration, with bulletpoints (if necessary!)
--	Go to http://localhost:8000/my-first-webapp to see if all works, 
--	if not go back to previous point
--	Bonus exercise: change something in the content of the webpage...
+-	Go to http://localhost:8000/my-first-webapp to see if all works 
+   
+4. Optional: (if the code doesn't run) 
+- create debug configuration (bug), similarly to the run-configuration.
+- read the error, google it, and solve it ;)
+
+Bonus exercise: 
+- change something in the content of the webpage :)
 
 For those who want to know more about Django, the webframework: [RealPython: getting started with Django](https://realpython.com/get-started-with-django-1/)
 
