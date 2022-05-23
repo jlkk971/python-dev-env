@@ -69,7 +69,7 @@ Connect your repo with git on your laptop via ssh
 2. Test if your ssh connection was established correctly
   * `ssh -T git@github.com` # if it returns your username as configured in step X, the connection is succesfull and you can continue with cloning the repo
 
-Clone the repo 
+Clone the repo
 1. Clone the repo locally
   * `git clone <url>`
 2. Fetch the branches
@@ -79,7 +79,7 @@ Clone the repo
 4. Check on which branch you are
   * `git branch` # the checkout branch has a star 
   *   ! You can move between branches with `git switch <branch_name>`
-<do some work>
+  <do some work>
 5. Check the status of your work
   * `git status` # red is not tracked, green is tracked
 6. Add the files you need
@@ -107,7 +107,7 @@ And now you think you're there, but you're not. If you go to github.com and logi
 -	Create configuration to run the code
 -	Run the code
 -	Optional: create debug configuration, with bulletpoints (if necessary!)
--	Go to http://localhost/my-first-webapp to see if all works, 
+-	Go to http://localhost:8000/my-first-webapp to see if all works, 
 -	if not go back to previous point
 -	Bonus exercise: change something in the content of the webpage...
 
