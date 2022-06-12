@@ -3,63 +3,31 @@
 
 **notes beforehand:
 - it's a good habit to type stuff <- you learn faster (of course this is up to you, you can also copy the command)
-- 
+- ...
 
-### Python
+CONTENT
 
-1. Check current versions
-- `python --version` or `python3 -V`
-2. Install python
-  * mac: `brew install python@3.10`
-  * windows: download and install [python3.10](https://www.python.org/downloads/release/python-3104/)
-3. Verify that it worked by writing your first python script
-  * open a terminal and open python: `$ python3`
-    ```
-    >>> print(‘me’) 
-    me
-    >>> quit()
-    ```
-  * create new python-file: `$ vim print_me.py`
-    ```
-    print(‘My first Python script works!’)
-    ```
-  * type `:wq` and press enter
-  * run the script in the terminal: `python3 print_me.py` 
+- Github
+- Git
+- SSH
+- Python
+- Virtual Environments
+- Package management (pip and pypi)
+- PyCharm
 
-### Virtual environments & packages
-
-1. Create workspace-folder (<-makes your life easier)/<project folder> and navigate there
-  * `$ mkdir ~/workspace/<project_name>` 
-  * `$ cd ~/workspace/<project_name>`
-2. Create a virtual environment
-  * `$ python -m venv venv_<project_name>` the `-m` stands for _import module_ `venv`
-  *    ! make sure you have the proper python version.
-3. Activate the environment
-  * `$ . venv_<project_name>` or `$ source venv_<project_name>`
-If the virtual environment is active, you recognise it by th (prefix) in the command line:
-  * `$ (venv_<project_name>) blabla`
-4. Check which packages are present in the current virtual environment
-  * `$ pip freeze`
-5. Install some packages
-  * `pip install pandas`
-  * `pip install django`
-  *    ! only install packages _inside_ of your virtual environment.
-6. Export the packages to a file <- this will make the life of your colleagues and future you easier, why?
-  * `pip freeze >> requirements.txt`
-7. Check the requirements-file, what is in there? Have you installed all that?
+### Github
+ 
+1. Create github-account (also useful for portfolio puposes)
+2. Fork the current repo to your own account!
+  * on https://github.com/ehhalbers/python-dev-env, click [fork]
+  * name your fork something senible and confirm
 
 
 ### Git
 
 1. install git (if not already installed)
 2. configure git (username, .gitconfig etc)
-
-### Github
- 
-1. Create github-account (also useful for portfolio puposes)
-2. Fork the current repo to your own account!
-  * on https://github.com/ehhalbers/python-pt1-dev-env, click [fork]
-  * name your fork something senible and confirm
+3. 
 
 ### SSH
  
@@ -94,6 +62,53 @@ And now you think you're there, but you're not. If you go to github.com and logi
 
 
  If you have done that, you go back to your local terminal, switch to the main branch and pull the new code in `git pull`. What happens with the files?
+
+
+
+### Python
+
+1. Check current versions
+- `python --version` or `python3 -V`
+2. Install python
+  * mac: `brew install python@3.10`
+  * windows: download and install [python3.10](https://www.python.org/downloads/release/python-3104/)
+3. Verify that it worked by writing your first python script
+  * open a terminal and open python: `$ python3`
+    ```
+    >>> print(‘me’) 
+    me
+    >>> quit()
+    ```
+  * create new python-file: `$ vim print_me.py`
+    ```
+    print(‘My first Python script works!’)
+    ```
+  * type `:wq` and press enter
+  * run the script in the terminal: `python3 print_me.py` 
+
+ 
+### Virtual environments & packages
+
+1. Create workspace-folder (<-makes your life easier)/<project folder> and navigate there
+  * `$ mkdir ~/workspace/<project_name>` 
+  * `$ cd ~/workspace/<project_name>`
+2. Create a virtual environment
+  * `$ python -m venv venv_<project_name>` the `-m` stands for _import module_ `venv`
+  *    ! make sure you have the proper python version.
+3. Activate the environment
+  * `$ . venv_<project_name>` or `$ source venv_<project_name>`
+If the virtual environment is active, you recognise it by th (prefix) in the command line:
+  * `$ (venv_<project_name>) blabla`
+4. Check which packages are present in the current virtual environment
+  * `$ pip freeze`
+5. Install some packages
+  * `pip install pandas`
+  * `pip install django`
+  *    ! only install packages _inside_ of your virtual environment.
+6. Export the packages to a file <- this will make the life of your colleagues and future you easier, why?
+  * `pip freeze >> requirements.txt`
+7. Check the requirements-file, what is in there? Have you installed all that?
+
 
 
 ### PyCharm
